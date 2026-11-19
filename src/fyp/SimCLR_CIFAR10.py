@@ -1,17 +1,17 @@
 import torchvision
-from lightly.transforms import SimCLRTransform
+from lightly.transforms import SimCLRTransform, utils
 
-from src.fyp import utils
+from fyp import utils_src
 
-utils.seed_everything(42)
 
 def main():
-
-
-    transform = SimCLRTransform(input_size=32, gaussian_blur=0.0)
-    dataset = torchvision.datasets.CIFAR10(
-        "data/cifar10", download=True, transform=transform
-    )
+    if __name__ == "__main__":
+        utils_src.seed_everything(42)
+        transform = SimCLRTransform(input_size=32, gaussian_blur=0.0)
+        
+        dataset = torchvision.datasets.CIFAR10(
+            "data/cifar10", download=True, transform=transform
+        )
 
 
 
