@@ -1,0 +1,11 @@
+model = "SimCLR"
+trained_on_dataset = "CIFAR-10"
+num_workers = 8
+batch_size = 256
+seed = 42
+max_epochs = 20
+input_size = 128
+num_ftrs = 32
+vf_prob = 0.5
+rr_prob = 0.5
+lr = 1e-3
