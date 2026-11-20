@@ -1,5 +1,5 @@
 version = 1
-revision = 5
+revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -415,12 +415,16 @@ source = { editable = "." }
 dependencies = [
     { name = "lightly", extra = ["timm"] },
     { name = "pandas" },
+    { name = "torch" },
+    { name = "torchvision" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "lightly", extras = ["timm"], specifier = ">=1.6.1" },
     { name = "pandas", specifier = ">=3.1.1" },
+    { name = "torch", specifier = ">=2.15.0" },
+    { name = "torchvision", specifier = ">=0.29.2" },
 ]
 
 [[package]]
